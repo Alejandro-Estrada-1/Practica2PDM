@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_registro"
+    tools:context=".RegistroActivity">
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/titulo_registro"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"/>
+
+    <!-- Campo Nombre -->
+    <EditText
+        android:id="@+id/etNombre"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_nombre"
+        android:textSize="16sp"
+        android:padding="12dp"
+        app:layout_constraintTop_toBottomOf="@id/tvTitulo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"/>
+
+    <!-- Campo Teléfono -->
+    <EditText
+        android:id="@+id/etTelefono"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_telefono"
+        android:inputType="phone"
+        android:textSize="16sp"
+        android:padding="12dp"
+        app:layout_constraintTop_toBottomOf="@id/etNombre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"/>
+
+    <!-- Campo Correo -->
+    <EditText
+        android:id="@+id/etCorreo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_correo"
+        android:inputType="textEmailAddress"
+        android:textSize="16sp"
+        android:padding="12dp"
+        app:layout_constraintTop_toBottomOf="@id/etTelefono"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"/>
+
+    <!-- Selección de Género -->
+    <TextView
+        android:id="@+id/tvGenero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/seleccion_genero"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/etCorreo"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="16dp"/>
+
+    <RadioGroup
+        android:id="@+id/rgGenero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/tvGenero"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp">
+
+        <RadioButton
+            android:id="@+id/rbMasculino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/genero_masculino"/>
+
+        <RadioButton
+            android:id="@+id/rbFemenino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/genero_femenino"/>
+    </RadioGroup>
+
+    <!-- Checkbox de Aceptación de Términos -->
+    <CheckBox
+        android:id="@+id/cbAcepto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/terminos"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/rgGenero"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="24dp"/>
+
+    <!-- Botón Enviar -->
+    <Button
+        android:id="@+id/btnEnviar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_enviar"
+        android:textSize="18sp"
+        android:padding="12dp"
+        app:layout_constraintTop_toBottomOf="@id/cbAcepto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="24dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

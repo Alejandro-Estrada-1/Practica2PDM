@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Nombre de la Aplicación -->
+    <string name="app_name">Agenda de Contactos</string>
+
+    <!-- Títulos -->
+    <string name="titulo_registro">Registro de Usuario</string>
+    <string name="titulo_resumen">Resumen de Datos</string>
+
+    <!-- Campos del Formulario -->
+    <string name="hint_nombre">Nombre Completo</string>
+    <string name="hint_correo">Correo Electrónico</string>
+    <string name="hint_telefono">Número de Teléfono</string>
+    <string name="seleccion_genero">Selecciona tu género:</string>
+    <string name="genero_masculino">Masculino</string>
+    <string name="genero_femenino">Femenino</string>
+    <string name="terminos">Acepto los términos y condiciones</string>
+    <string name="btn_enviar">Enviar</string>
+    <string name="btn_volver">Volver</string>
+
+    <!-- Mensajes de Validación -->
+    <string name="error_nombre">El nombre debe tener al menos 3 caracteres</string>
+    <string name="error_correo">Ingresa un correo válido</string>
+    <string name="error_telefono">El teléfono debe tener 10 dígitos numéricos</string>
+    <string name="error_genero">Por favor, selecciona un género</string>
+    <string name="error_terminos">Debes aceptar los términos y condiciones</string>
+
+</resources>
