@@ -18,7 +18,8 @@
         </activity>
 
         <activity android:name=".RegistroActivity"/>
-        <activity android:name=".ResumenActivity"/>
+        <activity android:name=".ResumenActivity"
+            android:configChanges="orientation|screenSize"/>
 
     </application>
 </manifest>
