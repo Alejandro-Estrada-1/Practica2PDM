@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <!-- Nombre de la Aplicación -->
     <string name="app_name">Agenda de Contactos</string>
 
     <!-- Títulos -->
@@ -26,4 +24,11 @@
     <string name="error_genero">Por favor, selecciona un género</string>
     <string name="error_terminos">Debes aceptar los términos y condiciones</string>
 
+    <!-- Nuevos Strings -->
+    <string name="open">Abrir</string>
+    <string name="close">Cerrar</string>
+
+    <!-- Strings para Navigation Drawer -->
+    <string name="navigation_drawer_open">Abrir menú</string>
+    <string name="navigation_drawer_close">Cerrar menú</string>
 </resources>

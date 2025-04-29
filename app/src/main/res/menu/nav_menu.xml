@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Elementos del menú para el Navigation Drawer -->
+    <item
+        android:id="@+id/nav_nuevo"
+        android:title="Nuevo Contacto" />
+    <item
+        android:id="@+id/nav_lista"
+        android:title="Lista de Contactos" />
+    <item
+        android:id="@+id/nav_ajustes"
+        android:title="Ajustes" />
+</menu>

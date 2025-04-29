@@ -8,6 +8,7 @@
         android:label="Agenda Contactos"
         android:theme="@style/Theme.AgendaContactos">
 
+        <!-- MainActivity: Pantalla de inicio de la aplicación -->
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -17,9 +18,20 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".RegistroActivity"/>
+        <!-- RegistroActivity: Actividad para registrar un nuevo contacto -->
+        <activity android:name=".RegistroActivity" />
+
+
         <activity android:name=".ResumenActivity"
-            android:configChanges="orientation|screenSize"/>
+            android:configChanges="orientation|screenSize"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
 
     </application>
+
 </manifest>
